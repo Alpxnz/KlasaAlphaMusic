@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      "github:dirigeants/klasa#master",
+      "C:\\Users\\luisb\\Desktop\\musicklasa"
+    ]
+  ],
+  "_from": "github:dirigeants/klasa#master",
+  "_id": "klasa@github:dirigeants/klasa#7fbd351c1276a171fdc854bc99f05b5ef89eb32b",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/klasa",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "github:dirigeants/klasa#master",
+    "rawSpec": "github:dirigeants/klasa#master",
+    "saveSpec": "github:dirigeants/klasa#master",
+    "fetchSpec": null,
+    "gitCommittish": "master"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "github:dirigeants/klasa#7fbd351c1276a171fdc854bc99f05b5ef89eb32b",
+  "_spec": "github:dirigeants/klasa#master",
+  "_where": "C:\\Users\\luisb\\Desktop\\musicklasa",
+  "author": {
+    "name": "BDistin"
+  },
+  "bugs": {
+    "url": "https://github.com/dirigeants/klasa/issues"
+  },
+  "dependencies": {
+    "fs-nextra": "^0.4.7"
+  },
+  "description": "Klasa: Croatian for 'class', is a class based remix on Komada.",
+  "devDependencies": {
+    "@types/node": "^13.1.8",
+    "docgen": "github:dirigeants/docsgen",
+    "eslint": "^6.8.0",
+    "eslint-config-klasa": "github:dirigeants/klasa-lint",
+    "eslint-plugin-markdown": "^1.0.0",
+    "markdownlint-cli": "^0.21.0",
+    "tslint": "^6.0.0",
+    "typescript": "^3.7.5"
+  },
+  "engines": {
+    "node": ">=10.1.0"
+  },
+  "homepage": "https://klasa.js.org/",
+  "license": "MIT",
+  "main": "src/index.js",
+  "name": "klasa",
+  "peerDependencies": {
+    "discord.js": "github:discordjs/discord.js#master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dirigeants/klasa.git"
+  },
+  "scripts": {
+    "docs": "npx dg --source src --custom guides/.docconfig.json --output dist/docs.json --logging",
+    "lint": "npx eslint --fix src && npx eslint --fix --config .eslintrcmd.json --ext md guides && npx tslint --fix 'typings/*.ts'",
+    "test:lint": "npx eslint src && npx tslint 'typings/*.ts' && npx eslint --config .eslintrcmd.json --ext md guides && npx markdownlint guides README.md"
+  },
+  "types": "typings/index.d.ts",
+  "version": "0.5.0-dev"
+}
